@@ -1,0 +1,11 @@
+prefix=/home1/jd429/app/cppunit/
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: CppUnit
+Description: The C++ Unit Test Library
+Version: 1.12.1
+Libs: -L${libdir} -lcppunit
+Libs.private: -ldl
+Cflags: -I${includedir}
